@@ -62,13 +62,13 @@ export default function App() {
             })}
           </section>
         </section>
-        <section className="bg-violet-700 p-8 md:p-12 text-slate-50 text-center">
+        <section className="bg-violet-700 mb-32 p-8 md:p-12 text-slate-50 text-center rounded-3xl">
           <h1 className="mb-12 md:mb-20 text-xl md:text-[34px] font-bold">{data.features.title}</h1>
-          <h3 className="mb-12 text-center">{data.features.subtitle}</h3>
-          <div className="md:grid md:grid-rows-2 md:gap-x-4">
+          <h3 className="mb-12 text-center text-xl">{data.features.subtitle}</h3>
+          <div className="md:grid md:grid-cols-3 md:gap-x-4 md:gap-y-4">
             {data.features.items.map((item) => {
               return (
-                <div className="flex flex-col gap-y-4" key={item.id}>
+                <div className="flex flex-col gap-y-4 pt-20" key={item.id}>
                   <img src={item.img} alt={item.title} />
                   <h4 className="font-bold">{item.title}</h4>
                   <p>{item.description}</p>
