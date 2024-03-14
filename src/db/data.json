@@ -1,6 +1,6 @@
 {
   "logo": {
-    "img": "../../public/assets/logo_mindthegraph.svg",
+    "img": "/assets/logo_mindthegraph.svg",
     "alt": "Mind the Graph",
     "url": "#"
   },
@@ -29,28 +29,28 @@
   "heroSection": {
     "mainTitle": "Discover all possibilities of using this powerfull tool and create science figures, posters and infographics.",
     "buttonText": "Start creating now",
-    "img": "../../public/assets/head-02.png"
+    "img": "/assets/head-02.png"
   },
   "about":{
     "title": "Visualize what Mind the Graph can do for you",
     "items": [
       {
         "id": 1,
-        "img": "../../public/assets/image_1.svg",
+        "img": "/assets/image_1.svg",
         "title": "Graphical Abstracts and Infographics",
         "description": "Improve your papers impact and visibility through quality visual communication",
         "url": "/learn-more"
       },
       {
         "id": 2,
-        "img": "../../public/assets/image_2.svg",
+        "img": "/assets/image_2.svg",
         "title": "Scientific Poster in a few clicks",
         "description": "Add visual impact to your posters with scientific illustrations and graphics",
         "url": "/learn-more"
       },
       {
         "id": 3,
-        "img": "../../public/assets/image_3.svg",
+        "img": "/assets/image_3.svg",
         "title": "Make better Slide Presentation",
         "description": "Transform your lectures, meetings and classes into high-impact visual experiences",
         "url": "/learn-more"
@@ -63,37 +63,37 @@
     "items": [
       {
         "id": 1,
-        "img": "../../public/assets/ico_drag.svg",
+        "img": "/assets/ico_drag.svg",
         "title": "Drag and Drop",
         "description": "Easily select and manage illustrations, text and templates"
       },
       {
         "id": 2,
-        "img": "../../public/assets/ico_premade.svg",
+        "img": "/assets/ico_premade.svg",
         "title": "Pre-made resources",
         "description": "Don’t waste time! Use our templates and just customize colours, text etc"
       },
       {
         "id": 3,
-        "img": "../../public/assets/ico_platform.svg",
+        "img": "/assets/ico_platform.svg",
         "title": "Online platform",
         "description": "Access your creations at any time and from anywhere"
       },
       {
         "id": 4,
-        "img": "../../public/assets/ico_odemand.svg",
+        "img": "/assets/ico_odemand.svg",
         "title": "On-demand illustrations",
         "description": "Don’t find exactly what you need? We will design it for you!"
       },
       {
         "id": 5,
-        "img": "../../public/assets/ico_multiple.svg",
+        "img": "/assets/ico_multiple.svg",
         "title": "Multiple size options",
         "description": "Ready-to-go templates in all popular sizes"
       },
       {
         "id": 6,
-        "img": "../../public/assets/ico_share.svg",
+        "img": "/assets/ico_share.svg",
         "title": "Share creations",
         "description": "Share your creations with your team or other users"
       }
