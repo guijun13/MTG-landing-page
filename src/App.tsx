@@ -60,19 +60,23 @@ export default function App() {
             })}
           </section>
         </section>
-        <section>
-          <h1>{data.features.title}</h1>
-          <h3>{data.features.subtitle}</h3>
-          {data.features.items.map((item) => {
-            return (
-              <div key={item.id}>
-                <img src={item.img} alt={item.title} />
-                <title>{item.title}</title>
-                <p>{item.description}</p>
-              </div>
-            );
-          })}
-          <button>Explore Mind the graph</button>
+        <section className="bg-violet-700 p-8 md:p-12 text-slate-50 text-center">
+          <h1 className="mb-12 md:mb-20 text-xl md:text-[34px] font-bold">{data.features.title}</h1>
+          <h3 className="mb-12 text-center">{data.features.subtitle}</h3>
+          <div className="md:grid md:grid-rows-2 md:gap-x-4">
+            {data.features.items.map((item) => {
+              return (
+                <div className="flex flex-col gap-y-4" key={item.id}>
+                  <img src={item.img} alt={item.title} />
+                  <h4 className="font-bold">{item.title}</h4>
+                  <p>{item.description}</p>
+                </div>
+              );
+            })}
+          </div>
+          <button className="mt-4 border border-solid border-slate-50 py-2 px-4 rounded-full uppercase">
+            Explore Mind the graph
+          </button>
         </section>
       </main>
     </>
