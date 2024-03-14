@@ -8,14 +8,12 @@ export default function App() {
           <a href={data.logo.url}>
             <img src={data.logo.img} alt={data.logo.alt} />
           </a>
-          <nav className="flex items-center gap-x-4">
+          <nav className="flex items-center gap-x-4 text-slate-50 font-bold">
             <div className="flex flex-col md:flex-row md:gap-x-4">
               {data.navbar.map((item) => {
                 return (
                   <div key={item.id}>
-                    <a className="text-slate-50" href={item.url}>
-                      {item.name}
-                    </a>
+                    <a href={item.url}>{item.name}</a>
                   </div>
                 );
               })}
