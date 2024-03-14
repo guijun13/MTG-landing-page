@@ -20,7 +20,9 @@ export default function App() {
                 );
               })}
             </div>
-            <button className="p-2 border border-slate-200 rounded-full">Login</button>
+            <button className="p-2 border border-slate-200 rounded-full text-slate-50">
+              Login
+            </button>
             <button className="p-2 rounded-full bg-indigo-500 text-slate-50">Sign up free</button>
           </nav>
         </header>
