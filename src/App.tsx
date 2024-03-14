@@ -37,19 +37,28 @@ export default function App() {
           <img src="" alt="Big image here" />
         </section>
       </div>
-      <main>
-        <section>
-          <h1>{data.about.title}</h1>
-          {data.about.items.map((item) => {
-            return (
-              <article key={item.id}>
-                <img src={item.img} alt={item.title} />
-                <title>{item.title}</title>
-                <p>{item.description}</p>
-                <a href={item.url}>&gt; Learn more</a>
-              </article>
-            );
-          })}
+      <main className="mx-10 md:mx-36">
+        <section className="mt-24 mb-16">
+          <h1 className="mb-12 md:mb-20 text-violet-600 text-xl md:text-[34px] font-bold text-center">
+            {data.about.title}
+          </h1>
+          <section className="flex flex-col gap-y-4 md:flex-row md:gap-x-4">
+            {data.about.items.map((item) => {
+              return (
+                <article
+                  className="flex flex-col gap-y-4 justify-between items-center text-center"
+                  key={item.id}
+                >
+                  <img src={item.img} alt={item.title} />
+                  <h3 className="text-violet-600 font-bold text-lg">{item.title}</h3>
+                  <p className="text-black font-medium text-lg">{item.description}</p>
+                  <a className="text-violet-600 font-bold text-lg" href={item.url}>
+                    &gt; Learn more
+                  </a>
+                </article>
+              );
+            })}
+          </section>
         </section>
         <section>
           <h1>{data.features.title}</h1>
