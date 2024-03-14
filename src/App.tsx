@@ -22,15 +22,17 @@ export default function App() {
             <button className="p-2 rounded-full bg-indigo-500 text-slate-50">Sign up free</button>
           </nav>
         </header>
-        <section>
-          <div>
-            <p>
+        <section className="m-4 flex flex-col gap-y-4 justify-center items-center md:flex-row">
+          <div className="flex flex-col gap-y-4 items-center md:items-start">
+            <p className="font-bold text-slate-50 text-center md:text-start">
               Discover all possibilities of using this powerfull tool and create science figures,
               posters and infographics.
             </p>
-            <button>Start creating now</button>
+            <button className="w-fit py-2 px-4 rounded-full bg-violet-500 text-slate-50">
+              Start creating now
+            </button>
           </div>
-          <img src="" alt="" />
+          <img src="" alt="Big image here" />
         </section>
       </div>
       <main>
