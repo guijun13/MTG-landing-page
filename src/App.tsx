@@ -26,17 +26,16 @@ export default function App() {
             <button className="p-2 rounded-full bg-indigo-500 text-slate-50">Sign up free</button>
           </nav>
         </header>
-        <section className="m-4 flex flex-col gap-y-4 justify-center items-center md:flex-row">
+        <section className="mt-8 md:mx-28 flex flex-col gap-y-4 justify-center items-center md:flex-row">
           <div className="flex flex-col gap-y-4 items-center md:items-start">
-            <p className="font-bold text-slate-50 text-center md:text-start">
-              Discover all possibilities of using this powerfull tool and create science figures,
-              posters and infographics.
+            <p className="font-bold md:text-[34px] text-slate-50 text-center md:text-start">
+              {data.heroSection.mainTitle}
             </p>
             <button className="w-fit py-2 px-4 rounded-full bg-violet-500 text-slate-50">
-              Start creating now
+              {data.heroSection.buttonText}
             </button>
           </div>
-          <img src="" alt="Big image here" />
+          <img src={data.heroSection.img} alt="Head image" />
         </section>
       </div>
       <main className="mx-10 md:mx-36">
@@ -44,7 +43,7 @@ export default function App() {
           <h1 className="mb-12 md:mb-20 text-violet-600 text-xl md:text-[34px] font-bold text-center">
             {data.about.title}
           </h1>
-          <section className="flex flex-col gap-y-4 md:flex-row md:gap-x-4">
+          <section className="flex flex-col gap-y-16 md:flex-row md:gap-x-4">
             {data.about.items.map((item) => {
               return (
                 <article
@@ -69,7 +68,7 @@ export default function App() {
             {data.features.items.map((item) => {
               return (
                 <div className="flex flex-col gap-y-4 pt-20" key={item.id}>
-                  <img src={item.img} alt={item.title} />
+                  <img className="h-20" src={item.img} alt={item.title} />
                   <h4 className="font-bold">{item.title}</h4>
                   <p>{item.description}</p>
                 </div>
@@ -77,7 +76,7 @@ export default function App() {
             })}
           </div>
           <button className="mt-4 border border-solid border-slate-50 py-2 px-4 rounded-full uppercase">
-            Explore Mind the graph
+            {data.features.exploreButton}
           </button>
         </section>
       </main>
