@@ -1,0 +1,98 @@
+{
+  "logo": {
+    "img": "",
+    "alt": "Mind the Graph",
+    "url": "/"
+  },
+  "navbar":[
+    {
+      "id": 1,
+      "name": "Templates",
+      "url": "/templates"
+    },
+    {
+      "id": 2,
+      "name": "Pricing",
+      "url": "/pricing"
+    },
+    {
+      "id": 3,
+      "name": "Blog",
+      "url": "/blog"
+    },
+    {
+      "id": 4,
+      "name": "Jobs",
+      "url": "/jobs"
+    }
+  ],
+  "about":{
+    "title": "Visualize what Mind the Graph can do for you",
+    "items": [
+      {
+        "id": 1,
+        "img": "",
+        "title": "Graphical Abstracts and Infographics",
+        "description": "Improve your papers impact and visibility through quality visual communication",
+        "url": "/learn-more"
+      },
+      {
+        "id": 2,
+        "img": "",
+        "title": "Scientific Poster in a few clicks",
+        "description": "Add visual impact to your posters with scientific illustrations and graphics",
+        "url": "/learn-more"
+      },
+      {
+        "id": 3,
+        "img": "",
+        "title": "Make better Slide Presentation",
+        "description": "Transform your lectures, meetings and classes into high-impact visual experiences",
+        "url": "/learn-more"
+      }
+    ]
+  },
+  "features":{
+    "title": "Create effective science figures in minutes",
+    "subtitle": "We built Mind the Graph for simplicity. The platform is easy to use and just about anybody can use it to create great infographics and presentations - from beginners to professionals, individuals to groups and small labs to large organisations",
+    "items": [
+      {
+        "id": 1,
+        "img": "",
+        "title": "Drag and Drop",
+        "description": "Easily select and manage illustrations, text and templates"
+      },
+      {
+        "id": 2,
+        "img": "",
+        "title": "Pre-made resources",
+        "description": "Don’t waste time! Use our templates and just customize colours, text etc"
+      },
+      {
+        "id": 3,
+        "img": "",
+        "title": "Online platform",
+        "description": "Access your creations at any time and from anywhere"
+      },
+      {
+        "id": 4,
+        "img": "",
+        "title": "On-demand illustrations",
+        "description": "Don’t find exactly what you need? We will design it for you!"
+      },
+      {
+        "id": 5,
+        "img": "",
+        "title": "Multiple size options",
+        "description": "Ready-to-go templates in all popular sizes"
+      },
+      {
+        "id": 6,
+        "img": "",
+        "title": "Share creations",
+        "description": "Share your creations with your team or other users"
+      }
+    ]
+  }
+
+}

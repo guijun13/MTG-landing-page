@@ -1,18 +1,25 @@
+import data from './db/data.json';
+
 export default function App() {
   return (
     <>
       <header>
-        <button>Mind the Graph logo</button>
+        <a href={data.logo.url}>
+          <img src={data.logo.img} alt={data.logo.alt} />
+        </a>
         <nav>
-          <a href="">Templates</a>
-          <a href="">Pricing</a>
-          <a href="">Blog</a>
-          <a href="">Jobs</a>
+          {data.navbar.map((item) => {
+            return (
+              <div key={item.id}>
+                <a href={item.url}>{item.name}</a>
+              </div>
+            );
+          })}
           <button>Login</button>
           <button>Sign up free</button>
         </nav>
       </header>
-      <body>
+      <main>
         <section>
           <div>
             <p>
@@ -24,47 +31,37 @@ export default function App() {
           <img src="" alt="" />
         </section>
         <section>
-          <h1>Visualize what Mind the Graph can do for you</h1>
+          <h1>{data.about.title}</h1>
           <div>
-            <div>
-              <img src="" alt="" />
-              <title>Graphical Abstracts and Infographics</title>
-              <p>Improve your papers impact and visibility through quality visual communication</p>
-              <button>&gt; Learn more</button>
-            </div>
-            <div>
-              <img src="" alt="" />
-              <title>Scientific Poster in a few clicks</title>
-              <p>Add visual impact to your posters with scientific illustrations and graphics</p>
-              <button>&gt; Learn more</button>
-            </div>
-            <div>
-              <img src="" alt="" />
-              <title>Make better Slide Presentation</title>
-              <p>
-                Transform your lectures, meetings and classes into high-impact visual experiences
-              </p>
-              <button>&gt; Learn more</button>
-            </div>
+            {data.about.items.map((item) => {
+              return (
+                <div key={item.id}>
+                  <img src={item.img} alt={item.title} />
+                  <title>{item.title}</title>
+                  <p>{item.description}</p>
+                  <a href={item.url}>&gt; Learn more</a>
+                </div>
+              );
+            })}
           </div>
         </section>
         <section>
-          <h1>Create effective science figures in minutes</h1>
-          <h3>
-            We built Mind the Graph for simplicity. The platform is easy to use and just about
-            anybody can use it to create great infographics and presentations - from beginners to
-            professionals, individuals to groups and small labs to large organisations
-          </h3>
+          <h1>{data.features.title}</h1>
+          <h3>{data.features.subtitle}</h3>
           <div>
-            <div>
-              <img src="" alt="" />
-              <title></title>
-              <p></p>
-            </div>
+            {data.features.items.map((item) => {
+              return (
+                <div key={item.id}>
+                  <img src={item.img} alt={item.title} />
+                  <title>{item.title}</title>
+                  <p>{item.description}</p>
+                </div>
+              );
+            })}
           </div>
           <button>Explore Mind the graph</button>
         </section>
-      </body>
+      </main>
     </>
   );
 }
